@@ -2,10 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # 실제 사용 중인 브랜치 이름으로 설정했나요?
-
-jobs:
-  deploy:
+      - master 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
