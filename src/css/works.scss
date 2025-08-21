@@ -1,0 +1,19 @@
+.worksGroup {
+    display: flex; gap: 20px 30px; flex-wrap: wrap;
+    .worksItem {
+        flex: 0 0 50%; 
+        .worksThum {
+            width: 100%; border: 1px solid #ddd;
+            img {width: 100%;}
+        }
+        .worksInfo {
+            margin-top: 10px; position: relative; text-align: left;
+            .worksTit {font-size: 1.5rem; font-weight: 700;}
+            .worksDesc {margin-top: 5px; font-size: 1.2rem; color: #666;}
+            .tagGroup {
+                display: flex; column-gap: 10px; position: absolute; bottom: 0; right: 0;
+                .tag {padding: 0 8px; height: 25px; border-radius: 12.5px; background: cornflowerblue; color: #fff; font-weight: 600; text-align: center; line-height: 25px; display: inline-block;}
+            }
+        }
+    }
+}

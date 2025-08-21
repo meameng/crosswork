@@ -1,0 +1,11 @@
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contArea {
+    display: flex;
+    .lArea {flex: 0 0 66.67%; height: 100vh; overflow-y: auto;}
+    .rArea {flex: 0 0 33.33%; height: 100vh; overflow-y: auto;}
+}
