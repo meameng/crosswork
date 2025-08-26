@@ -1,0 +1,14 @@
+header {
+    width:100%; margin-bottom: 30px;
+    .headerArea {
+        .gnbGroup {
+            padding: 20px 0; display: flex; gap: 40px;
+            .gnbUnit {
+                a {
+                    font-size: 1.7rem; font-weight: 500; color: #333; transition: all 0.2s;
+                    &:hover {color: var(---Secondary);}
+                }
+            }
+        }
+    }
+}

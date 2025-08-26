@@ -9,9 +9,9 @@ function App() {
     <div className="wrapper">
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/works" element={<Works />} />
+        <Route path="/crosswork/" element={<Home />} />
+        <Route path="/crosswork/about" element={<About />} />
+        <Route path="/crosswork/works" element={<Works />} />
       </Routes>
     </Router>
     </div>

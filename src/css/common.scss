@@ -1,4 +1,4 @@
-body {background: #f5f8fa;}
+body {background: var(--Base-bg);}
 
 .wrapper {
     width: 100%;
@@ -19,6 +19,10 @@ body {background: #f5f8fa;}
         // padding-top:54px; margin-top: -54px; height: 100vh; overflow-y: auto;
         //     &::-webkit-scrollbar {width: 0; background-color: transparent;}
         //     &::-webkit-scrollbar-thumb { width: 0px;}
+    }
+    .basicDesc {
+        margin-bottom: 40px; font-size: 1rem; line-height: 1.8; color: #666;
+        &:last-child {margin-bottom: 0;}
     }
 }
 

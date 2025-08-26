@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "../css/works.scss"
+import Header from "../components/Header";
 import ContTit from "../components/ContTit";
 import WorksUnit from "../components/WorksUnit";
 import PjTit from "../components/PjTit";
@@ -96,11 +97,12 @@ function Works() {
 
     return (
         <div className="wrapper">
+            <Header/>
             <ContTit title="Works"/>
             <div className="contArea">
                 <div className="lArea">
                     <ul className="worksGroup">
-                        <WorksUnit id="works19" img={process.env.PUBLIC_URL + "/images/works_bg19.png"} tit="KCYCLE경륜 & KBOAT경정 사이트 전체 리뉴얼" desc="한국마사회" tag1="적응형"/>
+                        <WorksUnit id="works19" img={process.env.PUBLIC_URL + "/images/works_bg19.png"} tit="KCYCLE경륜 & KBOAT경정 사이트 전체 리뉴얼" desc="한국마사회" tag1="반응형"/>
                         <WorksUnit id="works17" img={process.env.PUBLIC_URL + "/images/works_bg17.png"} tit="한국마사회 사이트 전체 리뉴얼" desc="한국마사회" tag1="반응형" tag2="웹접근성 인증마크 획득" />
                         <WorksUnit id="works16" img={process.env.PUBLIC_URL + "/images/works_bg16.png"} tit="국민체력100 사이트 전체 리뉴얼" desc="국민체육진흥공단" tag1="반응형" tag2="웹접근성 인증마크 획득"/>
                         <WorksUnit id="works14" img={process.env.PUBLIC_URL + "/images/works_bg14.png"} tit="2022 한국생활가이드 E-Book 정보더하기 웹사이트 신규 구축" desc="한국건강가정진흥원" tag1="반응형" tag2="웹접근성 준수"/>
@@ -124,6 +126,11 @@ function Works() {
                     </ul>
                 </div>
                 <div className="rArea">
+                    <p className="basicDesc">
+                        최근 5년 간 참여해 온 프로젝트 리스트를 확인하실 수 있습니다.<br/>
+                        웹페이지를 확인할 수 있는 사이트는 실사이트, 리뉴얼 등으로 따로 확인할 수 없는 사이트는 작업 당시 활용한 파일리스트 일부를 연결해두었습니다.<br/>
+                        이외 내부 시스템 혹은 보안 상의 이유로 올릴 수 없는 사이트는 상세를 확인할 수 없습니다.
+                    </p>
                     <div className="projectArea">
                         <PjTit title="2024년"/>
                         <ul className="pjGroup">
