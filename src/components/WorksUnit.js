@@ -1,9 +1,7 @@
-import "../css/worksUnit.scss";
-
-const WorksUnit = ({img, tit, desc, tag1, tag2}) => {
+const WorksUnit = ({id, img, tit, desc, tag1, tag2}) => {
     return (
-        <li className="worksItem">
-            <button type="button" className="worksUnit">
+        <li className="worksItem none">
+            <button type="button" className="worksUnit" id={id}>
                 <div className="worksThum">
                     <img src={img} alt={tit} />
                 </div>

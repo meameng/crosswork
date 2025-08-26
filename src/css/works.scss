@@ -1,18 +1,83 @@
 .worksGroup {
-    display: flex; gap: 20px 30px; flex-wrap: wrap;
+    width: calc(50% - 15px); display:inline-flex; gap: 50px; flex-wrap: wrap; align-items: flex-start; vertical-align: top;
+    &.right {margin-left: 30px;}
     .worksItem {
-        flex: 0 0 50%; 
-        .worksThum {
-            width: 100%; border: 1px solid #ddd;
-            img {width: 100%;}
+        flex: 0 0 100%; 
+        &.none {
+            .worksUnit {opacity: 0; transform: translateY(100px); transition: all 0.4s;}
         }
-        .worksInfo {
-            margin-top: 10px; position: relative; text-align: left;
-            .worksTit {font-size: 1.5rem; font-weight: 700;}
-            .worksDesc {margin-top: 5px; font-size: 1.2rem; color: #666;}
-            .tagGroup {
-                display: flex; column-gap: 10px; position: absolute; bottom: 0; right: 0;
-                .tag {padding: 0 8px; height: 25px; border-radius: 12.5px; background: cornflowerblue; color: #fff; font-weight: 600; text-align: center; line-height: 25px; display: inline-block;}
+        .worksUnit {
+            opacity: 1; transform: translateY(0);transition: all 0.4s;
+            .worksThum {
+                width: 100%; border: 1px solid #ddd; line-height: 0;
+                img {width: 100%;}
+            }
+            .worksInfo {
+                margin-top: 10px; position: relative; text-align: left;
+                .worksTit {font-size: 1.2rem; font-weight: 700;}
+                .worksDesc {margin-top: 5px; font-size: 1rem; color: #666;}
+                .tagGroup {
+                    display: flex; column-gap: 6px; position: absolute; bottom: 0; right: 0;
+                    .tag {padding: 0 10px; height: 20px; border-radius: 10px; background: cornflowerblue; color: #fff; font-weight: 500; font-size: 0.8rem; text-align: center; line-height: 20px; display: inline-block;}
+                }
+            }
+        }
+        
+    }
+}
+
+.projectArea {
+    .pjTitArea {
+        margin-bottom: 15px;
+        .pjTit {font-size: 1.4rem;}
+    }
+    .pjGroup {
+        margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #ccc;
+        &:last-child {border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+    }
+    .pjUnit {
+        margin-bottom: 13px;
+        &:last-child {margin-bottom: 0;}
+        &:has(.pjDetail) {
+            .pjTit {
+                cursor: pointer; position: relative; color: var(---Primary);
+                &:after {display: block; content: ""; width: 0; height: 1px; background: #999; position: absolute; bottom: -2px; left: 0;transition: all 0.2s;}
+                &:hover:after {width: 100%; }
+            }
+        }
+        .pjSumm {width: 100%; display: flex; flex-wrap: wrap; gap: 5px 3px; align-items: center; position: relative;
+            .period {flex: 0 0 20%; max-width: 80px; font-size: 1rem; font-weight: 400; color: #666;}
+            .pjTit {flex: 0 1 auto; font-size: 1rem; font-weight: 500; white-space: nowrap; display: flex; align-items: center;
+                span {margin-left: 3px; padding: 0 8px; height: 18px; line-height: 18px; border-radius: 9px; background: cornflowerblue; color: #fff; font-weight: 500; font-size: 0.7rem; text-align: center; display: inline-block;
+                    &.respon {background: cornflowerblue;}
+                    &.adapt {background: #092473;}
+                    &.comp {background: #26a500;}
+                    &.access {background: #ffa500;}
+                    &.react {background: #ff6f61;}
+                }
+            }
+            // .spacer {flex: 1 0 auto; height: 1px; margin: 0 5px; background: #ccc;}
+            .pjHost {
+                flex: 0 1 auto; max-width: 85%; font-size: 0.9rem; color: #666; text-align: right; word-break: keep-all; white-space: nowrap; display: flex; align-items: center; justify-content: flex-end; margin-left: auto;
+            }
+        }
+        
+        &:has(.on) {
+            .pjSumm {
+                .period {flex: 0 0 100%; transition: all 0.4s;}
+                .pjTit {
+                    min-height: 34px; flex: 0 0 100%; margin-top: 5px; font-size: 1.4rem; transition: all 0.4s;
+                    &:after {display: none;}
+                    span {height:23px; line-height: 23px; border-radius: 11.5px; font-size: 0.8rem;}
+                }
+                .pjHost {flex: 0 0 100%; margin-top: 5px; position: absolute; top: 0; right: 0; transition: all 0.4s;}
+            }
+        }
+        .pjDetail {
+            max-height: 0; overflow: hidden; transition: all 0.4s;
+            &.on {max-height: 2000px; margin-top: 15px; overflow: visible;}
+            .detail {
+                img {width: 100%;}
             }
         }
     }

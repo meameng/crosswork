@@ -1,11 +1,27 @@
+body {background: #f5f8fa;}
+
 .wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .contArea {
     display: flex;
-    .lArea {flex: 0 0 66.67%; height: 100vh; overflow-y: auto;}
-    .rArea {flex: 0 0 33.33%; height: 100vh; overflow-y: auto;}
+    .lArea {
+        flex: 0 0 55%; padding: 0 40px 60px 0; border-right: 1px solid #ccc; 
+        // height: calc(100vh - 54px); overflow-y: auto; 
+        //     &::-webkit-scrollbar {width: 9px; background-color: transparent;}
+        //     &::-webkit-scrollbar-thumb {border: 2px solid #fff; width: 5px;}
+    }
+    .rArea {
+        flex: 0 0 45%; padding: 0 0 60px 50px; 
+        // padding-top:54px; margin-top: -54px; height: 100vh; overflow-y: auto;
+        //     &::-webkit-scrollbar {width: 0; background-color: transparent;}
+        //     &::-webkit-scrollbar-thumb { width: 0px;}
+    }
+}
+
+.contTitArea {
+    font-size: 1.9rem; margin-bottom: 40px;
 }

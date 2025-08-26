@@ -2,8 +2,7 @@ import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/home";
 import About from "./routes/about";
 import Works from "./routes/works";
-import './css/default.css'
-import './css/common.scss'
+import './css/style.scss'
 
 function App() {
   return (
@@ -15,8 +14,6 @@ function App() {
         <Route path="/works" element={<Works />} />
       </Routes>
     </Router>
-
-    <div>나옴??</div>
     </div>
   );
 }
