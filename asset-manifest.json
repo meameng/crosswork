@@ -1,16 +1,31 @@
 {
   "files": {
-    "main.css": "/crosswork/static/css/main.f855e6bc.css",
-    "main.js": "/crosswork/static/js/main.5bc0594a.js",
-    "static/js/453.438d9e50.chunk.js": "/crosswork/static/js/453.438d9e50.chunk.js",
-    "static/media/logo.svg": "/crosswork/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/crosswork/static/css/main.d48c2a26.css",
+    "main.js": "/crosswork/static/js/main.fee16279.js",
+    "static/media/NotoSansKR-Black.otf": "/crosswork/static/media/NotoSansKR-Black.c25cdc16ac2fbdc6577e.otf",
+    "static/media/NotoSansKR-Thin.otf": "/crosswork/static/media/NotoSansKR-Thin.c0b38da137ebab3b294b.otf",
+    "static/media/NotoSansKR-Light.otf": "/crosswork/static/media/NotoSansKR-Light.7d4ce2f6f92cffc70600.otf",
+    "static/media/NotoSansKR-Bold.otf": "/crosswork/static/media/NotoSansKR-Bold.bbb4ca5df6c6540f4af8.otf",
+    "static/media/NotoSansKR-Regular.otf": "/crosswork/static/media/NotoSansKR-Regular.bf54b090356010039bab.otf",
+    "static/media/NotoSansKR-Medium.otf": "/crosswork/static/media/NotoSansKR-Medium.7def03a7e5e60c5e0704.otf",
+    "static/media/NotoSansKR-Bold.woff": "/crosswork/static/media/NotoSansKR-Bold.bccfd5fe964d7e12ae44.woff",
+    "static/media/NotoSansKR-Regular.woff": "/crosswork/static/media/NotoSansKR-Regular.957d49ad23632e4a9349.woff",
+    "static/media/NotoSansKR-Medium.woff": "/crosswork/static/media/NotoSansKR-Medium.865a70c3c4af55e98eb5.woff",
+    "static/media/NotoSansKR-Black.woff": "/crosswork/static/media/NotoSansKR-Black.dc4ea50f3189301a20dc.woff",
+    "static/media/NotoSansKR-Light.woff": "/crosswork/static/media/NotoSansKR-Light.45736342560b8c933202.woff",
+    "static/media/NotoSansKR-Thin.woff": "/crosswork/static/media/NotoSansKR-Thin.cc4e8944d9cfc5a2a656.woff",
+    "static/media/NotoSansKR-Regular.woff2": "/crosswork/static/media/NotoSansKR-Regular.e95adf0e9aeddac43f42.woff2",
+    "static/media/NotoSansKR-Bold.woff2": "/crosswork/static/media/NotoSansKR-Bold.a4ecc3f7a43f7d43ce24.woff2",
+    "static/media/NotoSansKR-Medium.woff2": "/crosswork/static/media/NotoSansKR-Medium.e5d0c16f11ebac0c56d2.woff2",
+    "static/media/NotoSansKR-Light.woff2": "/crosswork/static/media/NotoSansKR-Light.e2557c2be18ddd169ee9.woff2",
+    "static/media/NotoSansKR-Black.woff2": "/crosswork/static/media/NotoSansKR-Black.90d55574a12424f9b9ec.woff2",
+    "static/media/NotoSansKR-Thin.woff2": "/crosswork/static/media/NotoSansKR-Thin.9d23ca66b990f383e7a7.woff2",
     "index.html": "/crosswork/index.html",
-    "main.f855e6bc.css.map": "/crosswork/static/css/main.f855e6bc.css.map",
-    "main.5bc0594a.js.map": "/crosswork/static/js/main.5bc0594a.js.map",
-    "453.438d9e50.chunk.js.map": "/crosswork/static/js/453.438d9e50.chunk.js.map"
+    "main.d48c2a26.css.map": "/crosswork/static/css/main.d48c2a26.css.map",
+    "main.fee16279.js.map": "/crosswork/static/js/main.fee16279.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.5bc0594a.js"
+    "static/css/main.d48c2a26.css",
+    "static/js/main.fee16279.js"
   ]
 }
