@@ -1,7 +1,16 @@
 {
   "files": {
-    "main.css": "/crosswork/static/css/main.d48c2a26.css",
-    "main.js": "/crosswork/static/js/main.fee16279.js",
+    "main.css": "/crosswork/static/css/main.94a3ed70.css",
+    "main.js": "/crosswork/static/js/main.c52d9ef0.js",
+    "static/media/GmarketSansBold.woff": "/crosswork/static/media/GmarketSansBold.566bd814589e1435e047.woff",
+    "static/media/GmarketSansBold.otf": "/crosswork/static/media/GmarketSansBold.03ceab7804dad3e86672.otf",
+    "static/media/GmarketSansMedium.otf": "/crosswork/static/media/GmarketSansMedium.3b975ddd58dcbe363ee5.otf",
+    "static/media/GmarketSansMedium.woff": "/crosswork/static/media/GmarketSansMedium.03eaf662577931a3a5fb.woff",
+    "static/media/GmarketSansLight.otf": "/crosswork/static/media/GmarketSansLight.5d3bc33796f1cb3705f8.otf",
+    "static/media/GmarketSansLight.woff": "/crosswork/static/media/GmarketSansLight.71ad4ae86e630a8058ed.woff",
+    "static/media/GmarketSansBold.woff2": "/crosswork/static/media/GmarketSansBold.6ccc0216874631457544.woff2",
+    "static/media/GmarketSansMedium.woff2": "/crosswork/static/media/GmarketSansMedium.1580942e913822761cbc.woff2",
+    "static/media/GmarketSansLight.woff2": "/crosswork/static/media/GmarketSansLight.a56caba1762f607b8e92.woff2",
     "static/media/NotoSansKR-Black.otf": "/crosswork/static/media/NotoSansKR-Black.c25cdc16ac2fbdc6577e.otf",
     "static/media/NotoSansKR-Thin.otf": "/crosswork/static/media/NotoSansKR-Thin.c0b38da137ebab3b294b.otf",
     "static/media/NotoSansKR-Light.otf": "/crosswork/static/media/NotoSansKR-Light.7d4ce2f6f92cffc70600.otf",
@@ -21,11 +30,11 @@
     "static/media/NotoSansKR-Black.woff2": "/crosswork/static/media/NotoSansKR-Black.90d55574a12424f9b9ec.woff2",
     "static/media/NotoSansKR-Thin.woff2": "/crosswork/static/media/NotoSansKR-Thin.9d23ca66b990f383e7a7.woff2",
     "index.html": "/crosswork/index.html",
-    "main.d48c2a26.css.map": "/crosswork/static/css/main.d48c2a26.css.map",
-    "main.fee16279.js.map": "/crosswork/static/js/main.fee16279.js.map"
+    "main.94a3ed70.css.map": "/crosswork/static/css/main.94a3ed70.css.map",
+    "main.c52d9ef0.js.map": "/crosswork/static/js/main.c52d9ef0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d48c2a26.css",
-    "static/js/main.fee16279.js"
+    "static/css/main.94a3ed70.css",
+    "static/js/main.c52d9ef0.js"
   ]
 }
