@@ -3,6 +3,13 @@ import Header from "../components/Header";
 import { useEffect } from "react";
 
 function Home() {
+    // Page Fade In Effect
+    useEffect(() => {
+        const wrapper = document.querySelector('.wrapper');
+
+        if (!wrapper) return;
+        wrapper.classList.remove("shade");
+    },[]);
 
     useEffect(()=>{
         if(window.matchMedia("(min-width: 768px)").matches) {
@@ -82,7 +89,7 @@ function Home() {
     
 
     return (
-        <div className="wrapper">
+        <div className="wrapper shade">
             <Header/>
             <div className="mainArea">
                 <div className="circleArea">
