@@ -6,7 +6,6 @@ import './css/style.scss'
 
 function App() {
   return (
-    <div className="wrapper">
     <Router>
       <Routes>
         <Route path="/crosswork/" element={<Home />} />
@@ -14,7 +13,6 @@ function App() {
         <Route path="/crosswork/works" element={<Works />} />
       </Routes>
     </Router>
-    </div>
   );
 }
 

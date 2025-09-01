@@ -1,24 +1,33 @@
 import "../css/about.scss"
 import Header from "../components/Header";
 import ContTit from "../components/ContTit";
+import { useEffect } from "react";
 
 function About() {
+    // Page Fade In Effect
+    useEffect(() => {
+        const wrapper = document.querySelector('.wrapper');
+
+        if (!wrapper) return;
+        wrapper.classList.remove("shade");
+    },[]);
+
+    // 재직중일 때 수식화
+    // const carrerPeriod = (2024 - 2017) + "년";
+
     return (
-        <div className="wrapper">
+        <div className="wrapper shade">
             <Header/>
             <ContTit title="About Me"/>
             <div className="contArea">
                 <div className="lArea">
                     <div className="aboutArea">
                         <p className="basicDesc">
-                            안녕하세요. 뭘 써야하지요? 그냥 소개글이요. 소개글. 흑흑<br/>
-                            저는 프론트엔드 개발자입니다. 주로 반응형 웹페이지를 제작하고 있습니다.<br/>
-                            HTML, CSS, JavaScript를 주로 사용하며, React도 다룰 수 있습니다.<br/>
-                            웹표준과 웹접근성을 준수하는 코드를 작성하려 노력합니다.<br/>
-                            새로운 기술을 배우는 것을 좋아하고, 협업하는 것을 즐깁니다.<br/>
-                            사용자의 입장에서 생각하며, 더 나은 사용자 경험을 제공하기 위해 고민합니다.<br/>
-                            함께 일하는 동료들과 좋은 관계를 유지하며, 긍정적인 에너지를 나누고 싶습니다.<br/>
-                            감사합니다.
+                            안녕하세요. 웹퍼블리셔 <b>장수지</b>입니다.<br/>
+                            그동안 다양한 프로젝틀을 수행하며 성실함과 책임감을 바탕으로 신뢰받을 수 있는 결과물을 만들어 왔습니다.<br/>
+                            체계적인 업무 프로세스를 통해 안정적으로 일하는 것을 좋아하며, 끊임없이 소통하며 업무환경을 맞추어갑니다.
+                            함께 일하는 동료들과 좋은 관계를 유지하며, 긍정적인 에너지를 나누고 싶습니다.<br/><br/>
+                            잘 부탁드립니다.
                         </p>
                         <ul className="aboutGroup">
                             <li className="aboutUnit">
@@ -35,7 +44,7 @@ function About() {
                                 </ul>
                             </li>
                             <li className="aboutUnit">
-                                <h4 className="abtTit">경력</h4>
+                                <h4 className="abtTit">경력 <span className="period">(6년 4개월)</span></h4>
                                 <ul className="dtlGroup">
                                     <li className="dtlItem">
                                         <span className="years">2019.12-2024.12</span>

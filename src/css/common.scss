@@ -2,12 +2,16 @@ body {background: var(--Base-bg);}
 
 .wrapper {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
+    header ~ * {opacity: 1;transition: all 0.4s;}
+    &.shade {
+        header ~ * {opacity: 0;}
+    }
 }
 
 .contArea {
-    display: flex;
+    display: flex; padding: 0 40px;
     .lArea {
         flex: 0 0 55%; padding: 0 40px 60px 0; border-right: 1px solid #ccc; 
         // height: calc(100vh - 54px); overflow-y: auto; 
@@ -15,17 +19,44 @@ body {background: var(--Base-bg);}
         //     &::-webkit-scrollbar-thumb {border: 2px solid #fff; width: 5px;}
     }
     .rArea {
-        flex: 0 0 45%; padding: 0 0 60px 50px; 
+        width: 45%; flex: 0 0 45%; padding: 0 0 60px 50px; 
         // padding-top:54px; margin-top: -54px; height: 100vh; overflow-y: auto;
         //     &::-webkit-scrollbar {width: 0; background-color: transparent;}
         //     &::-webkit-scrollbar-thumb { width: 0px;}
     }
     .basicDesc {
         margin-bottom: 40px; font-size: 1rem; line-height: 1.8; color: #666;
+        b {font-weight: 500; color: var(---Primary);}
         &:last-child {margin-bottom: 0;}
+    }
+    @include media('tablet') {
+        flex-wrap: wrap;
+        .lArea {
+            flex: 0 0 100%; width: 100%; padding: 40px 0; border-right: none; border-top: 1px solid #ccc; 
+        }
+        .rArea {
+            width: 100%; flex: 0 0 100%; order: -1; padding: 0;
+        }
+    }
+    @include media('mobile') {
+        padding: 0 20px;
+        .basicDesc {
+            margin-bottom: 25px; font-size: 0.9rem;
+        }
     }
 }
 
 .contTitArea {
-    font-size: 1.9rem; margin-bottom: 40px;
+    margin-bottom: 40px; padding: 0 40px;
+    .contTit {font-size: 1.9rem;  font-family: 'GmarketSans'; font-weight: 700;}
+    @include media('mobile') {
+        margin-bottom: 25px;padding: 0 20px;
+        .contTit {font-size: 1.6rem;}
+    }
+}
+
+.tView {display: none;}
+@include media('tablet') {
+    .pcView {display: none;}
+    .tView {display: inline;}
 }

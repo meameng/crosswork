@@ -95,6 +95,35 @@ $basicFontSize:16px;
     url("/common/webfont/NotoSansKR-Black.otf") format("opentype");
 }
 
+// Gmarket Sans
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 300;
+  font-style: normal;
+  src: url("/common/webfont/GmarketSansLight.woff") format("woff"),
+    url("/common/webfont/GmarketSansLight.woff2") format("woff2"),
+    url("/common/webfont/GmarketSansLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 500;
+  font-style: normal;
+  src: url("/common/webfont/GmarketSansMedium.woff") format("woff"),
+    url("/common/webfont/GmarketSansMedium.woff2") format("woff2"),
+    url("/common/webfont/GmarketSansMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 700;
+  font-style: normal;
+  src: url("/common/webfont/GmarketSansBold.woff") format("woff"),
+    url("/common/webfont/GmarketSansBold.woff2") format("woff2"),
+    url("/common/webfont/GmarketSansBold.otf") format("opentype");
+}
+
+
 * {box-sizing: border-box; font-family:'PretendardGOV', sans-serif; letter-spacing: 0; word-break: keep-all;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
 fieldset,img {border:0 none}

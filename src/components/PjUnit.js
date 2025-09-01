@@ -13,9 +13,11 @@ const PjUnit = ({id, period, pjTit, tag1, tag2, pjHost, children}) => {
                 <h5 className="period">{period}</h5>
                 <div className="pjTit">
                     {pjTit}
-                    {tag1 && <span className={tagClass[tag1] || ""}>{tag1}</span>}
-                    {tag2 && <span className={tagClass[tag2] || ""}>{tag2}</span>}
-                </div>
+                    <div className="spanGroup">
+                        {tag1 && <span className={tagClass[tag1] || ""}>{tag1}</span>}
+                        {tag2 && <span className={tagClass[tag2] || ""}>{tag2}</span>}
+                    </div>
+                    </div>
                 <div className="spacer"></div>
                 <div className="pjHost">{pjHost}</div>
             </div>

@@ -1,0 +1,91 @@
+@import './maxin';
+
+.mainArea {
+    height: calc(100vh - 230px); display: flex; align-items: center; justify-content: center; overflow: hidden;
+    .circleArea {
+        width: 250px; height: 250px; position: relative; display: flex; align-items: center; justify-content: center;
+        &::before {display: block; content: ""; width:500px; height:500px; background: url(../../public/images/home_avatarBg.png) center no-repeat; opacity: 0.1; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; transition: all 0.4s;}
+        &:has(.nowOn) {
+            &::before {opacity: 0.05;}
+        }
+        .circleWrap {
+            width: 250px; height: 250px; border-radius: 50%; box-shadow: 0 5px 53px rgba(22, 91, 141, 0.3); overflow: hidden; text-align: center; position: absolute;
+            img {width: 100%;}
+            video {width:215%; object-position: center; position: absolute; top:45%; left:50%; transform: translate(-50%, -50%);}
+        }
+        .circleLine {
+            width: 250px; height: 250px; position: absolute; animation: circleRotate 10s linear infinite; animation-play-state: running;
+            .circleUnit {
+                padding: 10px 20px; position: absolute; top: 50%; left: 50%; transform-origin: 0 0; white-space: nowrap; transition: all 0.4s;
+                .unitTit {
+                    width: 170px; font-size: 1.35rem; color: var(---Primary); font-family: 'GmarketSans'; font-weight: 500;transition: all 0.4s; position: relative;
+                    &::after {display: block; content: ""; width: 0; height: 2px; background: var(---Secondary); position: absolute; bottom: -3px; left: 0; transition: all 0.4s;}
+                }
+                .unitDt {max-height: 0; padding-top: 10px; font-size: 1.05rem; line-height: 1.8; overflow: hidden; transition: all 0.4s;}
+                &:nth-child(1) .unitTit {letter-spacing: 0.09em;}
+                &:nth-child(2) .unitTit {letter-spacing: 0.6em;}
+                &:nth-child(3) .unitTit {letter-spacing: 0.6em;}
+            }
+
+            @for $i from 0 through 5 {
+                .circleUnit:nth-child(#{$i}) {
+                    transform: rotate(0deg - (72deg * $i)) translate(130px) rotate(0deg);
+                }
+            }
+
+            &:has(.nowOn) {
+                .circleUnit {
+                    .unitTit {font-size: 1.2rem; opacity: 0.6; }
+                    // &:nth-child(1) { transform: rotate(-160deg) translate(130px); } 
+                    // &:nth-child(2) { transform: rotate(-170deg) translate(130px); } 
+                    // &:nth-child(3) { transform: rotate(-180deg) translate(130px); } 
+                    // &:nth-child(4) { transform: rotate(-190deg) translate(130px); } 
+                    // &:nth-child(5) { transform: rotate(-200deg) translate(130px); }
+                }
+            }
+            .circleUnit.nowOn {
+                padding: 50px 20px;
+                .unitTit {
+                    font-size: 1.5rem; font-weight: 700; opacity: 1;letter-spacing: 0;
+                    &::after {width: 100%;}
+                }
+                .unitDt {max-height: 100px;}
+            }
+
+            @keyframes circleRotate {
+                from {transform: rotate(0deg);}
+                to {transform: rotate(360deg);}
+            }
+
+            &.paused {
+                animation-play-state: paused;
+            }
+
+        }
+    }
+
+    @include media('mobile') {
+        height: calc(100vh - 230px); 
+        .circleArea {
+            width: 200px; height: 200px; margin-left: -135px;
+            &::before { width:400px; height:400px; background-size: 400px;}
+            .circleWrap {
+                width: 200px; height: 200px;
+            }
+            .circleLine {
+                width: 200px; height: 200px;animation: none;
+                .circleUnit {
+                    .unitTit {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                @for $i from 0 through 5 {
+                    .circleUnit:nth-child(#{$i}) {
+                        transform: rotate(53deg - (20deg * $i)) translate(105px) rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+}

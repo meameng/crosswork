@@ -1,10 +1,15 @@
+@import './maxin';
+
 .aboutArea {
     .aboutGroup {
         display: flex; flex-wrap: wrap; gap: 40px 20px;
         .aboutUnit {
             flex: 0 0 calc(50% - 10px); border: 1px solid #ccc; border-radius: 15px; padding: 35px 25px; position: relative;
             &:last-child {flex: 0 0 100%;}
-            .abtTit {font-size: 1.35rem; padding: 5px 20px; background: var(--Base-bg); position: absolute; top: -20px; left: 0;}
+            .abtTit {
+                font-size: 1.35rem; padding: 5px 20px; background: var(--Base-bg); position: absolute; top: -20px; left: 0;
+                .period {font-size: 1rem; color: #666; font-weight: 400; display: inline-block;}
+            }
             .dtlItem {
                 margin-bottom: 10px; font-size: 1.05rem; font-weight: 500; display: flex; justify-content: space-between; align-items: center;
                 &:last-child {margin-bottom: 0;}
@@ -15,6 +20,28 @@
                 .skill {
                     font-size: 1.05rem;
                     b {font-weight: 600;}
+                }
+            }
+        }
+    }
+    @include media('mobile') {
+        .aboutGroup {
+            margin-top: 40px;
+            .aboutUnit {
+                flex: 0 0 100%; padding: 25px 20px;
+                .abtTit {
+                    font-size: 1.15rem; padding: 5px 15px;
+                    .period {font-size: 0.85rem;}
+                }
+                .dtlItem {
+                    font-size: 1rem;
+                    .years {font-size: 0.95rem;}
+                }
+                .sklGroup {
+                    gap: 20px; 
+                    .skill {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -39,9 +66,28 @@
                     b {width: 100%; font-size: 1.15rem; font-weight: 600; display: inline-block;}
                     i {width: 100%; font-style: normal; font-weight: 300; color: #666; letter-spacing: 0.15rem; display: inline-block;}
                 }
-                dd {flex: 0 0 77%; text-align: right; font-size: 1.25rem;}
+                dd {flex: 0 0 77%; text-align: right; font-size: 1.25rem; font-weight: 500;}
             }
         }
     }
     
+    @include media('mobile') {
+        height: auto;
+        .cttGroup {
+            gap: 0 25px;
+            .cttItem {
+                &:last-child {margin-bottom: 40px;}
+                .titleImg {
+                    width: 220px; height: 220px;
+                }
+                .ctt {
+                    dt {
+                        b {font-size: 1rem;}
+                        i {font-size: 0.8rem; letter-spacing: 0.1rem;}
+                    }
+                    dd {font-size: 1.1rem;}
+                }
+            }
+        }
+    }
 }
