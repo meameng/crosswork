@@ -11,12 +11,12 @@
                 .period {font-size: 1rem; color: #666; font-weight: 400; display: inline-block;}
             }
             .dtlItem {
-                margin-bottom: 10px; font-size: 1.05rem; font-weight: 500; display: flex; justify-content: space-between; align-items: center;
+                margin-bottom: 10px; font-size: 1.05rem; font-weight: 500; text-align: right; display: flex; justify-content: space-between; align-items: flex-start; gap: 5px;
                 &:last-child {margin-bottom: 0;}
-                .years {font-size: 1rem; color: #666; font-weight: 400;}
+                .years {font-size: 1rem; color: #666; font-weight: 400; text-align: left;}
             }
             .sklGroup {
-                display: flex; flex-wrap: wrap; gap: 20px 30px; justify-content: space-between;
+                display: flex; flex-wrap: wrap; gap: 20px 30px; justify-content: flex-start;
                 .skill {
                     font-size: 1.05rem;
                     b {font-weight: 600;}

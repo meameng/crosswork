@@ -16,11 +16,11 @@
                 img {width: 100%;}
             }
             .worksInfo {
-                margin-top: 10px; position: relative; text-align: left;
-                .worksTit {font-size: 1.2rem; font-weight: 700;}
-                .worksDesc {margin-top: 5px; font-size: 1rem; color: #666;}
+                margin-top: 10px; position: relative; text-align: left; display: flex; flex-wrap: wrap; gap: 5px;
+                .worksTit {flex: 0 0 100%; font-size: 1.2rem; font-weight: 700;}
+                .worksDesc {flex: 1 1 auto; font-size: 1rem; color: #666;}
                 .tagGroup {
-                    display: flex; column-gap: 6px; position: absolute; bottom: 0; right: 0;
+                    flex: 1 1 auto; display: flex; column-gap: 3px; justify-content: flex-end; align-items: center;
                     .tag {padding: 0 10px; height: 20px; border-radius: 10px; background: cornflowerblue; color: #fff; font-weight: 500; font-size: 0.8rem; text-align: center; line-height: 20px; display: inline-block;}
                 }
             }
@@ -38,7 +38,7 @@
                 .worksInfo {
                     margin-top: 7px;
                     .worksTit {font-size: 1.1rem;}
-                    .worksDesc {margin-top: 5px; font-size: 0.85rem; }
+                    .worksDesc {font-size: 0.85rem; }
                     .tagGroup {
                         column-gap: 3px;
                         .tag {height: 17px; border-radius: 8.5px; font-size: 0.7rem; line-height: 17px;}
@@ -95,11 +95,11 @@
                 .pjSumm {
                     .period {flex: 0 0 100%; transition: all 0.4s;}
                     .pjTit {
-                        min-height: 34px; flex: 0 0 100%; margin-top: 5px; font-size: 1.4rem; transition: all 0.4s;
+                        min-height: 34px; flex: 0 0 100%; flex-wrap: wrap; margin-top: 5px; font-size: 1.4rem; transition: all 0.4s;
                         &:after {display: none;}
                         span {height:23px; line-height: 23px; border-radius: 11.5px; font-size: 0.8rem;}
                     }
-                    .pjHost {flex: 0 0 100%; margin-top: 5px; position: absolute; top: 0; right: 0; transition: all 0.4s;}
+                    .pjHost {flex: 0 0 100%; position: absolute; top: 0; right: 0; transition: all 0.4s;}
                 }
             }
             .pjDetail {
