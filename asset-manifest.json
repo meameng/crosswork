@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crosswork/static/css/main.94a3ed70.css",
-    "main.js": "/crosswork/static/js/main.c52d9ef0.js",
+    "main.css": "/crosswork/static/css/main.0bb2eff1.css",
+    "main.js": "/crosswork/static/js/main.8b6ffd53.js",
     "static/media/GmarketSansBold.woff": "/crosswork/static/media/GmarketSansBold.566bd814589e1435e047.woff",
     "static/media/GmarketSansBold.otf": "/crosswork/static/media/GmarketSansBold.03ceab7804dad3e86672.otf",
     "static/media/GmarketSansMedium.otf": "/crosswork/static/media/GmarketSansMedium.3b975ddd58dcbe363ee5.otf",
@@ -30,11 +30,11 @@
     "static/media/NotoSansKR-Black.woff2": "/crosswork/static/media/NotoSansKR-Black.90d55574a12424f9b9ec.woff2",
     "static/media/NotoSansKR-Thin.woff2": "/crosswork/static/media/NotoSansKR-Thin.9d23ca66b990f383e7a7.woff2",
     "index.html": "/crosswork/index.html",
-    "main.94a3ed70.css.map": "/crosswork/static/css/main.94a3ed70.css.map",
-    "main.c52d9ef0.js.map": "/crosswork/static/js/main.c52d9ef0.js.map"
+    "main.0bb2eff1.css.map": "/crosswork/static/css/main.0bb2eff1.css.map",
+    "main.8b6ffd53.js.map": "/crosswork/static/js/main.8b6ffd53.js.map"
   },
   "entrypoints": [
-    "static/css/main.94a3ed70.css",
-    "static/js/main.c52d9ef0.js"
+    "static/css/main.0bb2eff1.css",
+    "static/js/main.8b6ffd53.js"
   ]
 }
