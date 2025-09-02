@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import Home from "./routes/home";
 import About from "./routes/about";
 import Works from "./routes/works";
@@ -6,13 +6,13 @@ import './css/style.scss'
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
-        <Route path="/crosswork/" element={<Home />} />
-        <Route path="/crosswork/about" element={<About />} />
-        <Route path="/crosswork/works" element={<Works />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/works" element={<Works />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 

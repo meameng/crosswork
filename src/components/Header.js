@@ -6,9 +6,9 @@ function Header() {
         <header className="header">
             <div className="headerArea">
                 <ul className="gnbGroup">
-                    <li className="gnbUnit"><Link to="/crosswork/">Home</Link></li>
-                    <li className="gnbUnit"><Link to="/crosswork/about">About</Link></li>
-                    <li className="gnbUnit"><Link to="/crosswork/works">Works</Link></li>
+                    <li className="gnbUnit"><Link to="/">Home</Link></li>
+                    <li className="gnbUnit"><Link to="/about">About</Link></li>
+                    <li className="gnbUnit"><Link to="/works">Works</Link></li>
                 </ul>
             </div>
         </header>
